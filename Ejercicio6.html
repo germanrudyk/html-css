@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+  </head>
+  <body>
+    <h1>Registrar un usuario</h1>
+
+    <section>
+      <div>
+        <form
+          action="/controlador-registro"
+          method="post"
+          class="form-registro"
+          enctype="multipart/form-data"
+        >
+          <div>
+            <label for="nombre">Nombre del usuario</label><br />
+            <input name="nombre" type="text" required />
+          </div>
+
+          <div>
+            <label for="contrasenia">Contraseña</label><br />
+            <input name="contrasenia" type="password" required />
+          </div>
+          <div>
+            <label for="number">Edad del usuario</label><br />
+            <input name="number" type="number" required />
+          </div>
+          <div>
+            <label for="date">Fecha de nacimiento del usuario</label><br />
+            <input name="date" type="date" required />
+          </div>
+          <div>
+            <label for="radio">Sexo del usuario</label><br />
+            <input type="radio" name="sexo" value="H" required /><span>Hombre</span
+            ><br />
+            <input type="radio" name="sexo" value="M" required/><span>Mujer</span
+            ><br />
+            <input type="radio" name="sexo" value="O" required /><span
+              >Prefiero no decirlo</span
+            >
+          </div>
+          <div>
+            <label for="pais">Pais nacimiento del usuario</label><br />
+            <select name="pais" required>
+              <option value="arg">Argentina</option>
+              <option value="chi">Chile</option>
+              <option value="bra">Brasil</option>
+              <option value="bra">Uruguay</option>
+            </select>
+          </div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
