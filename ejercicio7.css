@@ -1,0 +1,19 @@
+*{
+    background-color: gray;
+}
+
+h1{
+    font-family: Arial;
+    text-align: center;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(210, 204, 24);
+    text-align: left;
+}
